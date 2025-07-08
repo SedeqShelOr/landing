@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+
+<html dir="rtl" lang="he">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>סדק של אור</title>
+
+<meta name="description" content="סדק של אור – מרחב עמוק של אמת, קריאה רוחנית לפי שיטה ייחודית המבוססת על כתבים עתיקים. פתיחת שערים דרך שם, תאריך לידה ונשמה.">
+<meta name="keywords" content="קבלה, קריאה קבלית, תיקון הנשמה, נומרולוגיה קבלית, גלגול נשמות, מקובל נסתר, צדיק נסתר, הסרת עין הרע, תיקון עוולות, קריאה רוחנית, יהדות, תורת אמת, אור הגנוז, שערי אור, מסרים קבליים, רוחניות יהודית, פרשת שבוע, שמות קודש, תיקון מגלגולים קודמים, מלאכים, תקשור יהודי, קריאה לפי שם ותאריך לידה, מודעות עצמית, סודות הבריאה, חכמת הקבלה, פתיחת שערים, קריאה ללא ידע מוקדם">
+<meta name="language" content="he">
+<meta property="og:title" content="סדק של אור">
+<meta property="og:description" content="אם הגעת עד כאן – כנראה שאתה ראוי לתשובה. פתח את הלב דרך שערי אור.">
+<meta property="og:url" content="https://landing-ten-self.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://landing-ten-self.vercel.app/sadeq_background.png">
+
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background-image: url("sadeq_background.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    .header-text {
+      font-size: 1.2em;
+      color: gold;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+      text-align: right;
+    }
+
+    .shabbat-note {
+      font-size: 0.9em;
+      color: gold;
+      margin-top: 5px;
+      text-align: right;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 2px solid gold;
+      border-radius: 8px;
+      color: gold;
+      font-weight: bold;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .nav-buttons a:hover {
+      background-color: gold;
+      color: black;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: gold;
+      margin: 40px 20px;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: rgba(0, 0, 0, 0.95);
+      margin: 4% auto;
+      padding: 30px;
+      border: 2px solid gold;
+      width: 95%;
+      max-width: 600px;
+      border-radius: 10px;
+      color: white;
+      text-align: right;
+    }
+
+    .close {
+      color: gold;
+      float: left;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal-content h3 {
+      color: gold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .modal-content small, .modal-content p {
+      font-size: 1em;
+      color: #ffd;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+
+    button, .paypal-button {
+      background-color: gold;
+      color: black;
+      border: none;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    button:hover, .paypal-button:hover {
+      background-color: white;
+      color: black;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.6em;
+      }
+
+      .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .header-text, .shabbat-note {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div>
+<div class="header-text">בְּסִיַּעְתָּא דִשְׁמַיָּא</div>
+<div class="shabbat-note">אתר שומר שבת</div>
+</div>
+<div class="nav-buttons">
+<a onclick="document.getElementById('aboutModal').style.display='block'">אודות<br/><small>מקובל נסתר</small></a>
+<a onclick="document.getElementById('shaareiorModal').style.display='block'">שערי אור<br/><small>פתיחת קריאה</small></a>
+<a onclick="document.getElementById('nitzotzotModal').style.display='block'">ניצוצות קדושה<br/><small>כתוב את שבליבך</small></a>
+</div>
+</header>
+<h1>הסדק רואה הכל...<br/>אם הגעת עד לכאן – אז אתה ראוי לתשובות...</h1>
+<p style="color: #f0e68c; font-size: 1.2em; margin-top: 50px; text-align: center; font-family: 'Arial', sans-serif;">
+  "אִם־אֶסַּק שָּׁמַיִם שָׁם אָתָּה וְאַצִּיעָה שְּׁאוֹל הִנֶּךָּ"<br/>
+  — תהילים קל״ט, ח
+</p>
+<!-- Modal ניצוצות קדושה -->
+<div class="modal" id="nitzotzotModal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('nitzotzotModal').style.display='none'">×</span>
+<h3>ניצוצות קדושה</h3>
+<small>אם אין לך ביכולתך לשלם – אך ליבך מבקש מילה טובה, תשובה, או אור קטן – כתוב לנו. יש רגעים שבהם חסד חשוב יותר מכל דבר אחר.</small>
+<form action="https://formspree.io/f/xovwzeqj" method="POST">
+<input name="name" placeholder="שמך המלא" required="" type="text"/>
+<input name="email" placeholder="כתובת אימייל" required="" type="email"/>
+<textarea name="message" placeholder="כתוב כאן את שעל לבך" required="" rows="5"></textarea>
+<button type="submit">שלח</button>
+</form>
+</div>
+</div>
+<!-- Modal שערי אור -->
+<div class="modal" id="shaareiorModal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('shaareiorModal').style.display='none'">×</span>
+<h3>שערי אור</h3>
+<p>שיטת "שערי אור" נולדה לשינוי החיים לטובה, כדי לגעת ולתת תשובות מדוייקות מהאור הגנוז.<br/>
+      קריאה אחת – מדויקת, עמוקה, ללא ידע מוקדם – מתוך שמך, תאריך לידתך, והכוח שנמצא ביניהם.<br/>
+      זוהי פתיחה שמבוססת על כתבים עתיקים שהותרו לשימוש, ונכתבת ביד אנושית. לא שבלונה, לא אלגוריתם.<br/>
+      כאן מתחיל השער.</p>
+<form action="https://formspree.io/f/xovwzeqj" method="POST">
+<input name="name" placeholder="שם מלא" required="" type="text"/>
+<input name="birthdate" placeholder="תאריך לידה (לדוגמה: 27.07.1970)" required="" type="text"/>
+<input name="mother" placeholder="שם האם" required="" type="text"/>
+<select name="letter">
+<option value="">בחר אות אחת מהשם י-ה-ו-ה</option>
+<option value="he1">(ה - ראשונה)</option>
+<option value="vav">ו</option>
+<option value="yod">י</option>
+<option value="he2">(ה - שנייה)</option>
+</select>
+<input name="letters5" placeholder="בחר 5 אותיות מתוך: א ב ג ד ה ו ז ח ט י" required="" type="text"/>
+<input name="reason" placeholder="סיבת הבקשה (אופציונלי)" type="text"/>
+<textarea name="situation" placeholder="תיאור הסיטואציה שהובילה לבקשה" required="" rows="5"></textarea>
+<a class="paypal-button" href="https://www.paypal.me/sedeqshelor/180ILS" target="_blank">לתשלום דרך PayPal</a>
+<button disabled="true" style="opacity: 0.5; cursor: not-allowed;" type="submit">שלח קריאה</button>
+</form>
+</div>
+</div>
+<script>
+    window.onclick = function(event) {
+      ['nitzotzotModal', 'shaareiorModal'].forEach(function(id) {
+        var modal = document.getElementById(id);
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    }
+  </script>
+<!-- Modal אודות מקובל נסתר -->
+<div class="modal" id="aboutModal">
+<div class="modal-content">
+<span class="close" onclick="document.getElementById('aboutModal').style.display='none'">×</span>
+<h3>אודות מקובל נסתר</h3>
+<div class="modal-body" style="color: #f0e6d2; font-size: 1.1em; line-height: 1.9em; text-align: right; padding: 20px; font-family: 'Arial', sans-serif;">
+<p><strong style="color:#ffd700; font-size:1.3em;">מניפולציה בתחפושת של קדושה</strong><br/>
+      האירוניה הכי חדה – היא בפרנסה.<br/>
+      אתה שבור, מיואש, תלוי.<br/>
+      אנחנו נביא לך ישועה — אם רק תשלם.</p>
+<p><strong>ובין השורות:</strong><br/>
+      • אלוקים הפך למונופול למותג.<br/>
+      • אמונה הפכה לשוק.<br/>
+      • מצוות הפכו למוצרי מדף.</p>
+<hr style="border-color: #555; margin: 25px 0;"/>
+<p>כולם מדברים על שפע, הצלחה, ברכה —<br/>
+      אבל קודם, תפתח את הארנק שלך.<br/>
+      וזה רגע שמבהיר הכול:<br/>
+<strong>אם אתה באמת שליח של שפע — למה אתה צריך את הכסף שלי קודם?</strong></p>
+<p>זה באמת טרנד מודרני – אבל עם שורשים עמוקים:<br/>
+      • אנשים מחפשים משמעות, נחמה, ריפוי.<br/>
+      • וכשהדת הטהורה שלנו נראית קרה או מרוחקת — הם פונים לאלטרנטיבות / שרלטנים.<br/>
+      אבל במקום לקבל תשובות — הם פוגשים "מתווכים של האל".</p>
+<p style="text-align: center; font-size: 1.3em; color: #ffdf80;"><strong>סדק של אור</strong></p>
+<p>הקריאה מבוססת על מציאת עוולות בגלגול קודם<br/>
+      ומציאת תיקון הנשמה בגלגול זה – בהווה.</p>
+<p>מאחורי "שערי אור" פועל שיתוף פעולה נדיר – שקט, מוצנע, ואמיתי.<br/>
+      לפני למעלה משלושים שנה, <strong>מקובל נסתר</strong> ראה את מה שעדיין לא הבנתי בעצמי.<br/>
+      מאז, בדרכים שלא נאמרות בקול, עברו אליי <strong>כתבים שהיו גנוזים – והותרו כעת לשימוש.</strong></p>
+<p>כל תשובה כאן נכתבת מתוך האור הגנוז שבכתבי הקבלה,<br/>
+      ובשותפות עם מקובל נסתר, שפועל רק דרך <strong>"מתן בסתר."</strong></p>
+<p style="font-size: 1.1em;"><strong>אם הגעת עד כאן – כנראה שזה לא במקרה.</strong></p>
+<p style="font-size: 0.9em; color: #ccc;">*כל תשלום המתקבל באתר משמש אך ורק לתחזוקת האתר ועזרה לנזקקים.<br/>
+      *קבלת תשובה, עד 6 שעות משליחת הבקשה.</p>
+</div>
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const paypalBtn = document.querySelector("#shaareiorModal .paypal-button");
+  const submitBtn = document.querySelector("#shaareiorModal button[type='submit']");
+  paypalBtn.addEventListener("click", function() {
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = 1;
+    submitBtn.style.cursor = "pointer";
+  });
+});
+</script><script>
+(async function () {
+  const overlay = document.createElement('div');
+  overlay.id = 'shabbat-overlay';
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100vw';
+  overlay.style.height = '100vh';
+  overlay.style.background = 'rgba(0, 0, 0, 0.95)';
+  overlay.style.color = 'gold';
+  overlay.style.fontFamily = 'Arial, sans-serif';
+  overlay.style.display = 'flex';
+  overlay.style.flexDirection = 'column';
+  overlay.style.justifyContent = 'center';
+  overlay.style.alignItems = 'center';
+  overlay.style.zIndex = '9999';
+  overlay.style.textAlign = 'center';
+  overlay.innerHTML = `
+    <h1 style="font-size: 2.2em; margin-bottom: 20px;">🕯️ האתר שומר שבת</h1>
+    <p style="font-size: 1.3em;">נשוב לפעול עם צאת השבת<br>שבת שלום ומבורכת 🙏</p>
+  `;
+
+  const today = new Date().toISOString().split('T')[0];
+  const url = `https://www.hebcal.com/shabbat/?cfg=json&geonameid=295629&m=50&b=18&lg=s&start=${today}`;
+  try {
+    const res = await fetch(url);
+    const data = await res.json();
+    let candleLighting, havdalah;
+
+    for (const item of data.items) {
+      if (item.category === "candles") candleLighting = new Date(item.date);
+      if (item.category === "havdalah") havdalah = new Date(item.date);
+    }
+
+    const now = new Date();
+    if (candleLighting && havdalah && now >= candleLighting && now <= havdalah) {
+      document.body.appendChild(overlay);
+    }
+  } catch (e) {
+    console.error("Shabbat overlay error:", e);
+  }
+})();
+</script></body>
+</html>
